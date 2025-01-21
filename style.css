@@ -1,0 +1,135 @@
+.quicksand-font{
+font-family: "Quicksand", serif;
+font-optical-sizing: auto;
+font-weight:<weight>;
+font-style: normal;
+}
+/* shared Style */
+body{
+    margin: 0px;
+}
+.btn-primary{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    background-color: orange;
+}
+.btn-secondary{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    margin-top: 24px;
+}
+/* header */
+/* navbar */
+nav{
+    margin: 20px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-left-name{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 11px;
+}
+.nav-middle>ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-middle>ul>li>a{
+    text-decoration: none;
+    font-size:20px;
+}
+.a-1{
+    font-weight: bold;
+    color: orange;
+}
+.a-2{
+    font-weight: 500;
+    color: #01ACFD;
+}
+.a-3{
+    font-weight: 500;
+    color: rgba(5, 212, 223, 1);
+}
+.a-4{
+    font-weight:500;
+    color: rgba(93, 88, 239, 1);
+}
+.nav-small{
+    height: 30px;
+    display: none;
+}
+.nav-small>img{
+    height: 100%;
+}
+/* navbar close */
+.banner{
+    margin: 0px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.banner-title{
+    font-size: 56px;
+    font-weight: bold;
+    line-height:61px;
+    margin-bottom: 24px;
+}
+.span-01{
+    color: orange;
+}
+.span-02{
+    color:#01ACFD;
+}
+.banner-description{
+    font-size: 20px;
+}
+/*header close */
+/* header small resposnsive */
+@media screen and (max-width:576px) {
+    header{
+        margin: 12px 26px;
+    }
+    nav{
+        margin: 0px;
+    }
+    .nav-left-name{
+        display: none;
+    }
+    .nav-middle{
+        display:none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .nav-small{
+        display: inline-block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    .banner-img>img{
+        width: 100%;
+    }
+    .banner-content{
+        width:100%;
+    }
+}
