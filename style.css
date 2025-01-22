@@ -5,10 +5,10 @@ font-weight:<weight>;
 font-style: normal;
 }
 .raleway{
-  font-family: "Raleway", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+font-family: "Raleway", serif;
+font-optical-sizing: auto;
+font-weight:<weight>;
+font-style:normal;
 }
 /* shared Style */
 body{
@@ -22,6 +22,13 @@ body{
     border-radius: 12px;
     border: none;
     background-color: orange;
+    border: 2px solid orange;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid orange;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
 }
 .btn-secondary{
     font-size: 20px;
@@ -32,6 +39,12 @@ body{
     border-radius: 12px;
     background-color: black;
     color: white;
+    border: 2px solid black;
+}
+.btn-secondary:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
 }
 /* header */
 /* navbar */
@@ -252,6 +265,9 @@ nav{
     font-weight: bold;
     line-height: 24px;
 }
+.change>div:hover{
+    font-size: 42px;
+}
 /* section-01 close */
 /* section-01 small responsive */
 @media screen and (max-width:576px) {
@@ -265,5 +281,249 @@ nav{
     }
     .change{
         display: none;
+    }
+}
+/* section-01 small responsive close*/
+/* section-02 */
+.section-02{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background:url("./assets/bg.png"), linear-gradient(white,#ffd48b);
+    padding: 60px 120px;
+    text-align: center;
+}
+.sec-02-title{
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.sec-02-boxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.sec-02-box-big{
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    width: 500px;
+    height: 610px;
+    text-align: start;
+}
+.sec-02-img-date>img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    width: 100%;
+    
+}
+.sec-02-box-title-big{
+    margin: 58px 38px 38px 48px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38px;
+}
+.sec-02-box-description{
+    margin: 0px 64px 34px 38px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #666666;
+}
+.sec-02-box-date-box-big{
+    color: white;
+    background-color: #3CD8E8;
+    padding: 18px 15px;
+    position: absolute;
+    border-radius: 50px;
+    left: 38px;
+    top:280px;
+}
+.sec-02-box-mini{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 16px;
+    grid-gap: 10px;
+}
+.sec-02-box{
+    background-color: rgb(255, 255, 255);
+    height:300px;
+    width: 290px;
+    border-radius: 16px;
+    position: relative;
+    text-align: start;
+}
+.small{
+    display: none;
+}
+.sec-02-box>img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.sec-02-box-date-box-2{
+    background-color: #5D58F0;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    padding: 9px 18px;
+    border-radius: 50px;
+    left: 32px;
+    top: 160px;
+}
+.sec-02-box-date-box{
+    font-weight: 500;
+    color: white;
+    background-color: #95B226;
+    position: absolute;
+    padding: 9px 18px;
+    border-radius: 50px;
+    left: 32px;
+    top: 160px;
+}
+
+.sec-02-box-title{
+    font-weight: bold;
+    margin: 32px 32px 28px 32px;
+}
+.btn-2-2{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    margin: 60px auto;
+    border:2px solid black;
+}
+.btn-2-2:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+/* section-02 close */
+/* section-02 responsive */
+@media screen and (max-width:576px) {
+    .section-02{
+        padding:40px 16px;
+    }
+    .sec-02-title{
+        font-size: 26px;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+    .sec-02-box-big{
+        display: none;
+    }
+    .sec-02-box-mini{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sec-02-box{
+        width: 173px;
+        height: 179px
+    }
+    .sec-02-box>img{
+        width: 100%;
+    }
+    .sec-02-box-date-box{
+        font-size:9px;
+        padding: 6px 11px;
+        left: 22px;
+        top: 94px;
+    }
+    .color-2{
+        font-size: 9px;
+        padding: 6px 11px;
+        left: 22px;
+        top: 94px;
+    }
+    .small{
+        display: inline-block;
+    }
+    .sec-02-box-title{
+        font-size: 9px;
+        margin: 25px 22px 29px 22px;
+    }
+    .btn-2-2{
+        margin: 40px;
+        font-size: 16px;
+    }
+}
+/* section-02 responsive close */
+/* footer */
+footer{
+    padding: 130px 120px;
+    background-color: #00a2ff;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer-left{
+    max-width: 500px;
+}
+.footer-left-img-name{
+    display: flex;
+    align-items: center;
+}
+.footer-left-name{
+    margin-left: 10px;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.footer-left-description{
+    font-size: 20px;
+    margin-top: 35px;
+}
+.footer-middle>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-middle>ul>li>a{
+text-decoration: none;
+font-weight: 500;
+font-size: 20px;
+color: white;
+}
+.footer-right-title{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.footer-right>img{
+    margin-right: 10px;
+}
+/* footer close*/
+/* footer small responsive*/
+@media screen and (max-width:576px) {
+    footer{
+        padding:40px 16px;
+        flex-direction: column;
+        text-align: start;
+        gap: 30px;
+    }
+    .footer-left-name{
+        font-size: 34px;
+    }
+    .footer-left-description{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .footer-middle>ul>li>a{
+        font-size: 16px;
+    }
+    .footer-right-title{
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 }
