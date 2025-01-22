@@ -41,6 +41,7 @@ body{
     border: none;
     background-color: orange;
     border: 2px solid orange;
+    color: white;
 }
 .btn-primary:hover{
     background-color: rgb(255, 255, 255);
@@ -506,9 +507,14 @@ footer{
 }
 .footer-middle>ul>li>a{
 text-decoration: none;
-font-weight: 500;
+font-weight:600;
+color: rgb(255, 255, 255);
+}
+.bold{
+    text-decoration: none;
+font-weight:bold;
 font-size: 20px;
-color: white;
+color: rgb(255, 255, 255);
 }
 .footer-right-title{
     font-size: 26px;
